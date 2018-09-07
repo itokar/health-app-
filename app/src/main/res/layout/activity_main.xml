@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                 android:textSize="30dp"
+                 android:textColor="#e84118"
+                 android:gravity="center"
+                 android:layout_marginTop="30sp"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Health App" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="182dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:onClick="clickOk"
+                android:background="@color/MyFristColor"
+                android:id="@+id/button"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:text="Yes " />
+
+            <Button
+                android:onClick="clickSome"
+                android:background="@color/MySecondColor"
+                android:id="@+id/button2"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:text="SomeTime" />
+
+            <Button
+                android:onClick="clickNoh"
+                android:background="@color/MyThordColor"
+                android:id="@+id/button3"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
